@@ -113,6 +113,46 @@ Git is a distributed version control system designed to handle everything from s
     No need to use "origin branch_name" if you are pulling from present branch.
 
 
-      
+Other my Commnd 
+
+| Command                                            | Description                                                                 |
+|----------------------------------------------------|-----------------------------------------------------------------------------|
+| `git config --global user.name jnrchayan`          | Set global Git username                                                      |
+| `git config --global user.email jnrchayan@gmail.com`| Set global Git email address                                                |
+| `git init`                                         | Initialize a new Git repository in the current directory                     |
+| `ls -lart`                                         | List all files and directories, including hidden ones                       |
+| `git status`                                       | Check the current status of the repository                                   |
+| `git add chayan.cpp`                               | Add `chayan.cpp` to the staging area                                         |
+| `git commit`                                       | Commit changes in the staging area to the repository                        |
+| `git commit -m "Initial commit"`                   | Commit with a message ("Initial commit")                                     |
+| `git checkout -f`                                  | Force checkout to discard local changes and revert to the last commit        |
+| `touch roy.cpp`                                    | Create a new file `roy.cpp`                                                  |
+| `git add -A`                                       | Add all changes (including untracked files) to the staging area              |
+| `git commit -m "Added more cpp"`                   | Commit all staged changes with a message                                     |
+| `git checkout roy.cpp`                             | Restore `roy.cpp` from the last commit                                       |
+| `git log`                                          | Display commit history                                                       |
+| `git log -p -1`                                    | Show the last commit with changes                                            |
+| `git diff`                                         | Show unstaged changes between working directory and staging area             |
+| `git diff --staged`                                | Show staged changes between staging area and the last commit                 |
+| `git commit -a -m "Skipped staging area and fixed"`| Commit all modified files, skipping the staging area with a message          |
+| `git rm dele.cpp`                                  | Remove `dele.cpp` from both working directory and staging area               |
+| `git restore --staged dele.cpp`                    | Unstage `dele.cpp` (restore from staging area)                               |
+| `git rm --cached chayan.cpp`                       | Remove `chayan.cpp` from the tracking (unstage without deleting the file)    |
+| `git commit -a -m "Removing waste"`                | Commit all changes (including deletions) with a message                     |
+| `touch .gitignore`                                 | Create a `.gitignore` file to specify files to ignore                        |
+| `git commit -a -m "ignored some files and added gitignore"` | Commit changes to `.gitignore` with a message                        |
+| `git branch feature1`                              | Create a new branch named `feature1`                                         |
+| `git branch`                                       | List all branches                                                            |
+| `git checkout feature1`                            | Switch to branch `feature1`                                                  |
+| `git checkout master`                              | Switch back to `master` branch                                               |
+| `git merge feature1`                               | Merge `feature1` branch into the current branch (`master`)                   |
+| `git checkout -b 'flaskfile'`                      | Create and switch to a new branch named `flaskfile`                          |
+| `git remote add origin https://github.com/JNRCHAYAN/Git_Test.git` | Link local repository to a remote repository on GitHub         |
+| `git remote`                                       | List remote repositories                                                    |
+| `git remote -v`                                    | Show remote repositories with URLs                                          |
+| `git push origin master`                           | Push `master` branch changes to remote `origin` repository                   |
+| `git push -u origin flaskfile`                     | Push `flaskfile` branch changes to remote `origin` repository, set upstream  |
+| `git clone https://github.com/JNRCHAYAN/Git_Test.git` | Clone a repository from GitHub to local machine                              |
+
 
   
